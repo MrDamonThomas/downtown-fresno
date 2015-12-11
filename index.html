@@ -5,6 +5,11 @@
         <title>Mr. Damon Thomas | Downtown Fresno Revitilization</title>
         
         <link href="css/styles.css" rel="stylesheet" type="text/css" />
+
+        <link href="css/mobile-menu.css" rel="stylesheet" type="text/css" />
+        
+        <!--<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>-->
+        
         <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
         
         <meta charset="UTF-8" />
@@ -12,31 +17,38 @@
         <meta name="keywords" content="damon, thomas, quiq labs, fresno, clovis, damon thomas fresno, robots" />
         <meta name="author" content="Mr. Damon Thomas" />
         
-        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no; " />
     </head>
     <body>
         <header>
+            
+            <input type="checkbox" id="nav" /><label for="nav">MENU</label>
+            
             <div class="mainWidth" id="header">
                 <figure>
                     <!--<a href="index.html" id="logo"><img src="images/logo.png" alt="Mr. T. Logo" /></a>-->
                     
                     <h1><a href="index.html" id="logo">Mr. T!</a></h1>
                 </figure>
-                <nav id="menu">
-                    <ul>
-                        <li class="currentPage"><a href="index.html" title="Home Page">Home</a></li>
-                        <li><a href="about-me.html" title="About Page">About</a></li>
-                        <li><a href="typing.html" title="Typing Page">Typing</a></li>
-                        <li><a href="my-gallery.html" title="Gallery Page">Gallery</a></li>
-                        <li><a href="contact-me.html" title="Contact Page">Contact</a></li>
-                    </ul>
-                </nav>
+                
+                    <nav class="mobile" id="menu">
+                    <!--<a></a>-->
+                        <!--INPUT WAS HERE-->
+                        <ul id="mobileMenu">
+                            <li class="currentPage"><a href="index.html" title="Home Page">Home</a></li>
+                            <li><a href="about-me.html" title="About Page">About</a></li>
+                            <li><a href="typing.html" title="Typing Page">Typing</a></li>
+                            <li><a href="my-gallery.html" title="Gallery Page">Gallery</a></li>
+                            <li><a href="contact-me.html" title="Contact Page">Contact</a></li>
+                        </ul>
+                    </nav>
+                
             </div>
         </header>
-        <div id="bannerContact">
+        <div id="bannerHome">
             <h1 class="bannerTitle">My Students Are Great!</h1>
             <div id="bannerButton">
-                <a href="about-me.html" class="button" title="Information about Mr. T!">More About Me</a>
+                <a href="about-me.html" class="button"  title="Information about Mr. T!">More About Me</a>
             </div>
         </div>
         <section class="mainWidth" id="main">
@@ -55,13 +67,13 @@
             
             <!--COLUMN (B) STARTS HERE-->
             <article class="columnB">
-                <h2>Krispy Kreme</h2>
+                <h2>Geekwise</h2>
                 <figure class="likeImage">
-                    <a href="http://www.krispykreme.com"  target="_blank" class="image image-full"><img src="images/krispy-kreme.jpg" title="Krispy Kreme Doughnuts" alt="Krispy Kreme Doughnuts"/></a>
-                    <span>Get 'Em Hot!</span>
+                    <a href="http://www.geekwiseacademy.com"  target="_blank" class="image image-full"><img src="images/geekwise.jpg" title="Geekwise Academy Doughnuts" alt="Geekwise Academy"/></a>
+                    <span>Fast No Fluff</span>
                 </figure>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, quo aperiam voluptatibus rem architecto veniam provident iusto doloremque quasi esse adipisci minima commodi libero itaque tempore atque reprehenderit quam eligendi.</p>
-                <a class="button" href="http://www.krispykreme.com" target="_blank" title="Krispy Kreme Doughnuts" >Get Doughnuts</a>
+                <a class="button" href="http://www.geekwiseacademy.com" target="_blank" title="Geekwise Academy" >Get Smarter!</a>
             </article>
             <!--COLUMN (B) ENDS HERE-->
             
@@ -78,14 +90,13 @@
             <!--COLUMN (C) ENDS HERE-->
             
         </section>
-        
         <section class="mainWidth">
-            <aside class="alignLeft">
+            <aside class="alignLeft mobileAside">
                 <figure>
-                    <img src="images/mrt-mre.jpg" title="Mr. T. and Mr. E." alt="Mr. T. and Mr. E." />
+                    <img src="images/mre-mrt.jpg" title="Mr. T. and Mr. E." alt="Mr. T. and Mr. E." class="mre-mrt"/>
                 </figure>
             </aside>
-            <article class="alignRight">
+            <article class="alignRight mobileAbout">
                 <h2>Mr. T</h2>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
                 sed diam nonummy nibh euismod tincidunt ut laoreet dolore
@@ -125,7 +136,10 @@
                 humanitatis per seacula quarta decima et quinta decima. Eodem
                 modo typi, qui nunc nobis videntur parum clari, fiant sollemnes
                 in futurum.</p>
-                <a href="about-me.html" class="button" title="Information about Mr. T!">Full Bio Here</a>
+                <div class="btn">
+                    <a href="about-me.html" class="button" title="Information about Mr. T!">Full Bio Here</a>
+                </div>
+                
             </article>
         </section>
         <footer class="copyright">

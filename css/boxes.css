@@ -52,7 +52,7 @@ body {
     }
     #box1, #box2, #box3 {
         width:auto;
-        margin:15px auto;
+        margin:0px auto 20px auto;
     }
     h3 {
         font-size:2em;
@@ -63,10 +63,12 @@ body {
     p {
         font-size:1.25em;
     }
-    #box3 {
-        display:none;
-        /*visibility:hidden;*/
-    }
+    
+    /*#box3 {*/
+    /*    display:none;*/
+    /*    visibility:hidden;*/
+    /*}*/
+    
     .columnImages {
         width:90%;
     }
