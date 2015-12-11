@@ -1,6 +1,6 @@
-/** {*/
-/*    box-sizing:border-box;*/
-/*}*/
+* {
+    box-sizing:border-box;
+}
 
 .mobile {
     max-width:1000px;
@@ -101,6 +101,7 @@
     
     .columnA h2, .columnB h2, .columnC h2 {
         font-size:3em;
+        margin-top:20px;
     }
     
     .mainWidth {
@@ -126,3 +127,4 @@
 
 
 
+https://ctconline.certification-partners.com/ctconline-ciw/pages/login.action
