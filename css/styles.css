@@ -180,6 +180,14 @@ header {
     overflow:hidden;
 }
 
+#bannerAbout {
+    border-top:3px solid #62A1E4;
+    padding:20px 0px;
+    background:url() no-repeat top center #ffb5cc;
+    background-size:cover;
+    overflow:hidden;
+}
+
 .bannerTitle {
     text-align:center;
     color:#FFFFFF;
@@ -293,10 +301,25 @@ a.buttonRed:hover {
     margin-right:24px;
 }
 
+.floatLeft {
+    float:left;
+    width:384px;
+    margin-right:20px;
+}
+
 .alignRight {
     float:right;
     width:792px;
     text-align:justify;
+}
+
+.floatRight {
+    float:right;
+    margin-left:20px;
+}
+
+.clear {
+    clear:both;
 }
 
 /*   FOOTER STYLES  */
@@ -464,6 +487,25 @@ fieldset {background-color:#FFFFFF;}
 @media screen and (max-width:1024px) {
 
 }
+
+
+
+
+
+
+
+
+
+
+/*http://mrdamonthomas.github.io/downtown-fresno/*/
+
+
+
+
+
+
+
+
 
 
 
